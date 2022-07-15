@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Forms</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js' defer></script>
+</head>
+<body>
+    <div id="bg-img-cont">
+        <div id="logo-cont">
+            <img id="logo" src="./Asset/png-clipart-fairy-tail-logo-symbol-anime-lucky-symbols-miscellaneous-leaf.png" alt="Logo">
+            <div id="logo-text">Fairy Tail Guild</div>
+        </div>
+        <div id="credit-photo-footer">
+            <p>Photo by <a href="https://unsplash.com/es/@josipajuras?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Josipa Juras</a> on <a href="https://unsplash.com/">Unsplash</a> &copy RRB 2022 The Odin Project</p>
+        </div>
+    </div>
+    <form id="my-form" action="http://httpbin.org/post"  method="post">
+        <div id="field-hero-cont">
+            <p>This is not a real online service! You know you need something like this in your life
+                to help your realize your deepest dreams. Sign up <i>now</i> to get started.
+            </p>
+            <p>You know you want to.</p>
+        </div>
+        <div id="main-field">
+            <h3>Lets'do this!</h3>
+            <div class="field-layout">
+                <label for="first-name">FIRST NAME</label>
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <input type="text" id="last-name" name="last-name" required>
+                <label for="email">EMAIL</label>
+                <label for="phone">PHONE NUMBER</label>
+                <input type="email" id="email" name="email" >
+                <input type="text" id="phone" name="phone-num" minlength="11" maxlength="12">
+                <label for="password">PASSWORD</label>
+                <label for="confirm-pass">CONFIRM PASSWORD</label>
+                <input type="password" id="password" name="password" minlength="8" maxlength="20" required>
+                <input type="password" id="confirm-pass" minlength="8" maxlength="20" required>
+                <div id="error-msg"></div>
+            </div>
+        </div>
+        <div id="field-submit">
+            <button type="submit">Create an account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>       
+    </form>   
+</body>
+</html>

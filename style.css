@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: "Prompt", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.696);
+}
+
+#bg-img-cont{
+    width: 535px;
+    height: 1024px;
+    background: url("./Asset/josipa-juras-Ipv_MNTzcQI-unsplash.jpg") 100%/cover repeat;
+    
+
+}
+
+#logo-cont{
+    height: 150px;
+    margin-top: 224px;
+    margin-bottom: 610px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.069) ;
+}
+
+#logo{
+    width: 100px;
+    height: 150px;
+    margin-right: 10px;
+    opacity: 0.8;
+
+}
+
+#logo-text{
+    font-size: 3rem;
+    margin-top: 20px;
+    line-height:1.2;
+    font-weight: bold;
+    width:240px;
+
+}
+
+#credit-photo-footer{
+    text-align: center;
+    height: 40px;
+}
+
+#credit-photo-footer > p {
+    margin-top: 5px;
+    color: #fff;
+}
+
+#credit-photo-footer > p > a{
+    text-decoration: underline;
+    color:#fff
+}
+
+#my-form{
+    display: flex;
+    flex-direction: column;
+    background-color: #e8e8e8;
+    width:1024px;
+}
+
+#field-hero-cont{
+    width:100%;
+    height:370px;
+}
+
+#field-hero-cont > p{
+    font-size: 1.5rem;
+    padding-left: 2em;
+    margin-bottom: 1em;
+}
+
+#field-hero-cont:first-child{
+    padding-top: 8em;
+    width:88%;
+}
+  
+#main-field{
+    height:300px;
+    width:100%;
+    padding-left: 3rem;
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background-color: #fff;
+    /* border: 1px solid #bec2ba; */
+    box-shadow: 2px 5px #cecece;
+}
+
+#main-field > h3{
+    padding-top:10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.field-layout{
+    display:grid;
+    grid-template-columns: repeat(2, 320px);
+    grid-column-gap:5px;
+}
+
+.field-layout > label{
+    margin-bottom: 0.2em;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.field-layout > input{
+    margin-bottom: 23px;
+    width:260px;
+    height: 30px;
+    border:2px solid #e5e7eb;
+    padding: 0.5em 0.5em;
+}
+
+.field-layout > input[type="password"]{
+    margin-bottom: 0px;
+}
+
+#field-submit{
+    width: 100%;
+}
+
+#field-submit > button,
+#field-submit > p{
+    margin-left: 3rem;
+    margin-bottom: 40px;
+}
+
+button[type="submit"]{
+    width:220px;
+    height: 45px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #596D48;
+    color:#fff;
+}
+
+button[type="submit"] + p > a{
+    text-decoration: none;
+    color:#596D48;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover,
+button[type="submit"] + p > a:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.field-layout > input:hover{
+    border: 1px solid black;
+}
+
+.field-layout > input:focus{
+    outline-color: rgb(66, 66, 235);
+}
+
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+@media (max-width:1440px){
+    #bg-img-cont{
+        width:37%;
+    }
+
+    #my-form{
+        width:63%;
+    }
+
+}
+
+@media (max-width:1200px) and (min-width:670px){
+    body{
+        flex-direction: column;
+    }
+    
+    #bg-img-cont{
+        height: 20vh;
+        width: 100%;
+    }
+
+    #logo-cont{
+        margin:0 auto;
+        width:360px;
+
+    }
+
+    #credit-photo-footer > p > a,
+    #credit-photo-footer > p{
+        color:rgb(240, 240, 240);
+    }
+
+    #credit-photo-footer > p{
+        background-color: rgba(0, 0, 0, 0.298);
+    }
+
+    #my-form{
+        height: 100%;
+        width: 100%;
+    }
+
+    #field-hero-cont:first-child{
+        padding-top: 2em;
+    }
+
+    #field-hero-cont{
+        height: 240px;
+
+    }
+
+}
+
+@media (max-width:670px){
+    body{
+        flex-direction: column;
+    }
+    
+    #bg-img-cont{
+        height: 20vh;
+        width: 100%;
+    }
+
+    #logo-cont{
+        margin:0 0;
+
+    }
+
+    #credit-photo-footer > p > a,
+    #credit-photo-footer > p{
+        color:rgb(240, 240, 240);
+    }
+
+    #credit-photo-footer > p{
+        background-color: rgba(0, 0, 0, 0.298);
+    }
+
+    #my-form{
+        height: 100%;
+        width: 100%;
+    }
+
+    #field-hero-cont:first-child{
+        padding-top: 2em;
+    }
+
+    #field-hero-cont{
+        height: 320px;
+
+    }
+
+    #field-hero-cont > p{
+        padding-left: 1em;
+    }
+
+    #main-field{
+        padding-left: 1.7rem;
+
+    }
+    .field-layout{
+        grid-template-columns: repeat(2, 280px);
+        grid-column-gap:3px;
+    }
+    
+    #field-submit > button,
+    #field-submit > p{
+    margin-left: 1.7rem;
+    }
+
+}
+
